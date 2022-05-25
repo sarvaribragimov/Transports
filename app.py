@@ -3,8 +3,9 @@ import streamlit as st
 from fastai.vision.all import *
 import pathlib
 import plotly.express as px
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+import platform
+plt = platform.system()
+if plt =='linux':pathlib.windowsPath = pathlib.PosixPath
 #title
 st.title("Rasmlarni klassifikatsiya qiluvchi model (Boat,Airplane,Car)  Muallif: Ibragimov Sarvar ")
 # Rasmni yuklash
