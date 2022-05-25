@@ -7,7 +7,7 @@ import platform
 plt = platform.system()
 if plt =='linux':pathlib.windowsPath = pathlib.PosixPath
 #title
-st.title("Rasmlarni klassifikatsiya qiluvchi model (Boat,Airplane,Car)  Muallif: Ibragimov Sarvar ")
+st.title("Transportni  klassifikatsiya qiluvchi model (Boat,Airplane,Car)  Muallif: Ibragimov Sarvar ")
 # Rasmni yuklash
 file = st.file_uploader("Rasmni yuklash",type=['png','jpg','jpeg',"gif",'svg'])
 if file:
